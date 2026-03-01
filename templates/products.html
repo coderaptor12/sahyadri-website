@@ -1,0 +1,29 @@
+<h1>Products</h1>
+
+{% for p in products %}
+
+<div>
+
+<img src="/static/images/{{p[3]}}" width="200">
+
+<h3>{{p[0]}}</h3>
+
+<p>₹{{p[1]}}</p>
+
+<p>Branch: {{p[2]}}</p>
+
+<form action="/order" method="post">
+
+<input name="name" placeholder="Your Name">
+
+<input name="mobile" placeholder="Mobile">
+
+<input type="hidden" name="product" value="{{p[0]}}">
+
+<button>Order Now</button>
+
+</form>
+
+</div>
+
+{% endfor %}

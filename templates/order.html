@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Order Product</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+
+<body class="bg-gray-100">
+
+
+
+<header class="bg-black text-white p-4 text-center">
+
+<h1 class="text-2xl">
+
+Order Product
+
+</h1>
+
+</header>
+
+
+
+<section class="p-10">
+
+<div class="bg-white p-6 shadow max-w-md mx-auto">
+
+<h2 class="text-2xl mb-5 text-center">
+
+Place Order
+
+</h2>
+
+
+<form action="/order" method="post">
+
+
+<label>Name</label>
+
+<input name="name"
+class="border w-full p-2 mb-3">
+
+
+
+<label>Mobile</label>
+
+<input name="mobile"
+class="border w-full p-2 mb-3">
+
+
+
+<label>Address</label>
+
+<input name="address"
+class="border w-full p-2 mb-3">
+
+
+
+<label>Product Name</label>
+
+<input name="product"
+class="border w-full p-2 mb-3">
+
+
+
+<label>Select Branch</label>
+
+<select name="branch"
+class="border w-full p-2 mb-3">
+
+<option>Sambhaji Nagar</option>
+
+<option>Pachora</option>
+
+</select>
+
+
+
+<button class="bg-green-600 text-white w-full p-2">
+
+Confirm Order
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+
+
+</body>
+
+</html>
